@@ -13,7 +13,7 @@ const WatchPage = () => {
         dispatch(closeMenu());
     }, [])
   return (
-    <div>
+    <div className="mt-24 m-5">
       <iframe
         width="640"
         height="360"
