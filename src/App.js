@@ -4,25 +4,32 @@ import { Provider } from 'react-redux';
 import Body from './components/Body';
 import Head from './components/Head';
 import store from './utils/store';
-import MainContainer from './components/MainContainer';
+import { lazy, Suspense } from 'react';
+import ShimmerUI from './components/ShimmerUI';
 import WatchPage from './components/WatchPage';
 
+ const MainContainer = lazy(() => import("./components/MainContainer"));
+
+function App() {
 const appRouter = createBrowserRouter([{ // will render where the RouterProvider is
   path: "/",
   element: <Body />,
   children: [ //will go where my Outlet is
   {
     path: "/",
-    element: <MainContainer />,
+    element: (
+    <Suspense fallback={<ShimmerUI />}>
+      <MainContainer />
+    </Suspense>
+    ),
   },
   {
     path: "watch",
-    element: <WatchPage />
+    element: <WatchPage />,
   }
   ]
 }])
 
-function App() {
   return (
     <Provider store={store}>
     <div className="">
