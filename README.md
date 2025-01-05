@@ -1,6 +1,59 @@
+# my-youtube
+
+
+### :dart: Features
+- Live YT API Data
+- Debouncing & Caching
+- Live Chat
+- (n) Nested Comments
+
+
+### :running: Run Locally
+
+Clone the project
+
+```bash
+https://github.com/Vikash0122/my-youtube
+```
+
+Go to the project directory
+
+```bash
+cd my-youtube
+```
+
+Install dependencies
+
+```bash
+npm i
+```
+
+Start the server
+
+```bash
+npm run dev
+```
+
+### :triangular_flag_on_post: Deployment
+[LIVE](https://my-youtube-olive.vercel.app/)
+
+
+## :wave: Contributing
+
+Contributions are always welcome!
+
+
+## :handshake: Contact
+
+Vikash Kumar - - vikash220104@gmail.com
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
